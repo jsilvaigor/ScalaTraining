@@ -17,5 +17,19 @@ object FirstScalaWorksheet {
 
   ()
 
-  
+  val a = 42
+
+  var b = 42
+
+  val thisIsAVariable = 42
+
+  val theAnswer = 42
+
+  var c: Int = 42
+
+  val (d, e) = (4, 2)
+
+  (4, 2)
+  (4.2, 'a')
+  (4, 4.2, "hi")
 }
