@@ -32,4 +32,12 @@ object FirstScalaWorksheet {
   (4, 2)
   (4.2, 'a')
   (4, 4.2, "hi")
+
+  if (a < 100) println("less")
+
+  if (a > 100) println("greater")
+
+  val next = if (a % 2 == 0) a / 2 else 3 * a + 1
+
+  if (a < 100) "Hi" else ()
 }
