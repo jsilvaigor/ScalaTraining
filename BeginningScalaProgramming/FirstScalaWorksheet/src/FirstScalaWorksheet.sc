@@ -19,7 +19,7 @@ object FirstScalaWorksheet {
 
   val a = 42
 
-  var b = 42
+  val b = 42
 
   val thisIsAVariable = 42
 
@@ -40,4 +40,17 @@ object FirstScalaWorksheet {
   val next = if (a % 2 == 0) a / 2 else 3 * a + 1
 
   if (a < 100) "Hi" else ()
+
+  val result = a match {
+    case 0 => "zero"
+    case 13 => "thirteen"
+    case `b` => "Same as b"
+    case i => "Wow! This is big!, " + i
+  }
+
+  val resultTuple = (a + 1, b) match {
+    case (0, _) => "zero"
+    case (_, 13) => "thirteen"
+    case i => "Wow! This is big!, " + i
+  }
 }
