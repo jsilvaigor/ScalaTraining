@@ -12,5 +12,17 @@ object FunctionsWorksheet {
 
   b.filter(_ < 5)
 
+  a.flatMap(i => b.take(i))
+
+  c.exists(_ > 100)
+  c.forall(_ < 100)
+
+  // Returns the same type of the array
+  a.reduce((x, y) => x + y)
+  a.reduce(_ + _)
+
+  // Not necessarily returns the same type
+  a.foldLeft("0")(_ + _)
+  a.foldRight("0")(_ + _)
 
 }
