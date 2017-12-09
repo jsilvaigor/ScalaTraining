@@ -38,4 +38,35 @@ object Collections {
   0.1 to 1 by 0.1
 
   10 to 1 by -1
+
+  // Symbolic methods
+
+  // Concatenating two arrays inside a new array
+  arr ++ arr2
+  arr ++: arr2
+
+  // Adding items to the beginning and end of an array
+  2 +: arr2 :+ 2
+
+  arr.size
+  arr.length
+
+  arr.head
+  arr.last
+
+  // Returns a new array without the head
+  arr.tail
+
+  // Returns a new array without the 3 first items
+  arr2.drop(3)
+
+  // Returns a new array containing the 3 first items
+  arr2.take(3)
+
+  arr.reverse
+
+  // Returns a tuple with two new arrays
+  val (before, after) = arr2.splitAt(4)
+
+  arr2.slice(3, 6)
 }
