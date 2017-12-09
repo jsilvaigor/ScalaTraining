@@ -69,4 +69,37 @@ object Collections {
   val (before, after) = arr2.splitAt(4)
 
   arr2.slice(3, 6)
+
+  arr.isEmpty
+  arr.nonEmpty
+
+  arr.startsWith(Array(1, 2))
+  arr.endsWith(Array(2, 3))
+
+  arr.indexOf(2)
+
+  arr2.indices
+
+  arr.max
+  arr.min
+
+  arr.sum
+
+  arr.product
+
+  lst.toArray
+  lst.toArray
+
+  // Parallel array to parallel programing
+  arr.par
+
+  val list = (1 to 1000).toList
+  list.map(_ + 42)
+  list.par.map(_ + 42)
+
+  // Returns a new list
+  lst.updated(1, 99)
+
+  arr2.patch(2, Array(1, 2, 3), 3)
+
 }
