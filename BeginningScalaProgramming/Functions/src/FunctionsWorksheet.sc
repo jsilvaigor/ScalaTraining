@@ -25,4 +25,8 @@ object FunctionsWorksheet {
   a.foldLeft("0")(_ + _)
   a.foldRight("0")(_ + _)
 
+  b.find(_ % 3 == 0)
+  b.find(_ % 7 == 0)
+
+  b.find(_ % 3 == 0).map(_ / 3)
 }
