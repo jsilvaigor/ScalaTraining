@@ -53,4 +53,14 @@ object FirstScalaWorksheet {
     case (_, 13) => "thirteen"
     case i => "Wow! This is big!, " + i
   }
+
+  def square(x: Double): Double = x * x
+
+  square(5)
+
+  def greet(name: String): Unit = {
+    println(s"Hello, $name")
+  }
+
+  greet("Igor")
 }
