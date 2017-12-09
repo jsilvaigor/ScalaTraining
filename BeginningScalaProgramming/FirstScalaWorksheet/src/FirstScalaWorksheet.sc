@@ -68,18 +68,20 @@ object FirstScalaWorksheet {
 
   factorial(5)
 
+  import scala.annotation.tailrec
   def estimatePi(n: Int): Double = {
 
-    def helper(n: Int): Double = {
-      if (n < 1) 0 else {
+    @tailrec
+    def helper(n: Int, sum: Int): Double = {
+      if (n < 1) sum else {
         val x = math.random()
         val y = math.random()
-        (if (x * x + y * y < 1) 1 else 0) + helper(n - 1)
+        helper(n - 1, sum + (if (x * x + y * y < 1) 1 else 0))
       }
     }
 
-    helper(n) / n * 4
+    helper(n, 0) / n * 4
   }
 
-  estimatePi(100)
+  estimatePi(10000)
 }
