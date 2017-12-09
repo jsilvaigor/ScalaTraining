@@ -102,4 +102,23 @@ object Collections {
 
   arr2.patch(2, Array(1, 2, 3), 3)
 
+  val arr4 = Array(1, 2, 3, 4, 5, 6, 7)
+
+  arr4.intersect(arr)
+
+  arr.union(arr4)
+
+  arr4.diff(arr)
+
+  arr.union(arr4).distinct
+
+  arr4.mkString(", ")
+  arr4.mkString("(", ", ", ")")
+
+  arr4.view
+
+  arr4.zip(arr2)
+
+  arr4.zipWithIndex
+
 }
