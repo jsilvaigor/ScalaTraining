@@ -27,4 +27,15 @@ object Collections {
 
   val arr3 = Array.tabulate(10)(i => i * i)
 
+  Vector(1, 2, 3)
+
+  import collection.mutable
+
+  mutable.Buffer(1, 2, 3)
+
+  1 to 10 by 2
+
+  0.1 to 1 by 0.1
+
+  10 to 1 by -1
 }
